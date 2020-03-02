@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from "react-redux";
 import {
     updateCity,
     searchCity,
@@ -41,7 +42,6 @@ export default class SearchCity extends React.Component {
                     <span><button 
                             type='button'
                             className='btn btn-secondary mb-5'
-                            value = { name }
                             onClick={ this.handleSearchCity }>Go!
                         </button></span>
                 </div>

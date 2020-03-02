@@ -8,9 +8,8 @@ export function updateCity(name) {
     };
 }
 export function searchCity (name) {
-    console.log(name, '2nd console')
+    console.log(name, '2nd console inside searchcity action')
     return {
         type: 'SEARCH_CITY', 
-        payload: axios.get(`/search/${ name }`),
-    }
+        payload: axios.get(`/search/${name}`)}
 };
