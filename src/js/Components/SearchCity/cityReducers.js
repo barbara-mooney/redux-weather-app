@@ -26,6 +26,7 @@ export default function cityReducers (state = defaultState, action) {
             }
         }
         case 'SEARCH_CITY_FULFILLED': {
+                name = payload.name,
                 lon = payload.coord.lon,
                 lat = payload.coord.lat,
                 temp = payload.main.temp,

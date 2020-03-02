@@ -15,12 +15,13 @@ export default class SearchCity extends React.Component {
         const { dispatch } = this.props;
         const { value } = event.target;
         dispatch(updateCity(value));
+        console.log(value, 'value of city handlecityinput')
     }
 
     handleSearchCity() {
         const { name, dispatch } = this.props;
         dispatch(searchCity(name));
-        console.log(name);
+        console.log(name, '1st console inside handlesearchcity');
     }
 
     render() {
@@ -40,6 +41,7 @@ export default class SearchCity extends React.Component {
                     <span><button 
                             type='button'
                             className='btn btn-secondary mb-5'
+                            value = { name }
                             onClick={ this.handleSearchCity }>Go!
                         </button></span>
                 </div>

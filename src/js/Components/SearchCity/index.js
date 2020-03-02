@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import SearchCity from './SearchCity';
 
 function mapStoreToProps(store) {
+    console.log(store)
     return {
         name: store.name,
         lat: store.lat,
