@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
+import cityReducers from './components/SearchCity/cityReducers';
+
 
 const rootReducer = combineReducers({
-// add reducers
+    cityReducers,    
 });
 
 export default rootReducer;
