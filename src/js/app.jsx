@@ -1,7 +1,7 @@
 import React from 'react';
 // import PreloadedCities from './components/PreloadedCities';
 import SearchCity from './Components/SearchCity';
-import CityInfoDisplay from './components/CityInfoDisplay';
+// import CityInfoDisplay from './components/CityInfoDisplay';
 // import SearchHistory from './components/SearchHistory';
 
 
