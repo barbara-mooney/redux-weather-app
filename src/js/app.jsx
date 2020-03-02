@@ -1,7 +1,7 @@
 import React from 'react';
 // import PreloadedCities from './components/PreloadedCities';
 import SearchCity from './Components/SearchCity';
-// import CityInfoDisplay from './components/CityInfoDisplay';
+import CityInfoDisplay from './components/CityInfoDisplay';
 // import SearchHistory from './components/SearchHistory';
 
 
@@ -18,7 +18,7 @@ export default class App extends React.Component {
         </div>
         <div className='row'>
           <div className='col-12 col-md-6 mb-4'>
-            call city info display component
+            <CityInfoDisplay />
           </div>
           <div className='col-12 col-md-6 mb-4'>
             call searchhistory component

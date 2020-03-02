@@ -1,14 +1,13 @@
 const defaultState = {
-    name: '',
-    lon:'',
-    lat: '',
-    temp: '',
-    pressure: '',
-    humidity: '',
-    temp_min: '',
-    temp_max: '',
-    wind: '', 
-    status: '',
+    name: 'buenosaires',
+    lon:'12',
+    lat: '12',
+    temp: '12',
+    pressure: '12',
+    humidity: '12',
+    temp_min: '12',
+    temp_max: '12',
+    wind: '12', 
 };
 
 export default function cityReducers (state = defaultState, action) {
@@ -18,7 +17,7 @@ export default function cityReducers (state = defaultState, action) {
         case 'UPDATE_CITY': {
             return {
                 ...state, 
-                name: payload.name,
+                name: payload.name, 
             };
         }
         case 'SEARCH_CITY_PENDING': {

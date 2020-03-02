@@ -20,6 +20,7 @@ export default class SearchCity extends React.Component {
     handleSearchCity() {
         const { name, dispatch } = this.props;
         dispatch(searchCity(name));
+        console.log(name);
     }
 
     render() {
