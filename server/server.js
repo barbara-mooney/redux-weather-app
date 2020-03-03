@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 app.get('/search/:name', (req, res) => {
     name = req.params.name;
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=imperial`)
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${name}&appid=7b23ebde6eaf5f47b7da8c36d3c663c2&units=imperial`)
             .then(response => res.send(response.data))
             .catch(err => console.log(err));
 });

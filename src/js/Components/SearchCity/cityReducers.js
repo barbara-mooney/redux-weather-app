@@ -1,14 +1,17 @@
+// import moment from 'moment';
+
 const defaultState = {
-    cityData: '',
     name: '',
-    lon:'',
-    lat: '',
-    temp: '',
-    pressure: '',
-    humidity: '',
-    temp_min: '',
-    temp_max: '',
-    wind: '', 
+    lon:'0',
+    lat: '0',
+    icon: '0',
+    temp: '0',
+    pressure: '0',
+    humidity: '0',
+    temp_min: '0',
+    temp_max: '0',
+    wind: '0', 
+    history: [],
 };
 
 export default function cityReducers (state = defaultState, action) {
@@ -32,16 +35,17 @@ export default function cityReducers (state = defaultState, action) {
         case 'SEARCH_CITY_FULFILLED': {
             return {
                 ...state,
-                cityData: payload.data,
                 name: payload.data.name,
                 lon: payload.data.coord.lon,
                 lat: payload.data.coord.lat,
+                icon: payload.data.weather[0].icon,
                 temp: payload.data.main.temp,
                 pressure: payload.data.main.pressure,
                 humidity: payload.data.main.humidity,
                 temp_min: payload.data.main.temp_min,
                 temp_max: payload.data.main.temp_max,
-                windspeed: payload.data.main.wind,
+                wind: payload.data.wind.speed,
+                history: [...state.history, state.name]
                 }; 
             }            
 

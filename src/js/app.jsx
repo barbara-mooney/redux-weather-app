@@ -1,8 +1,7 @@
 import React from 'react';
-// import PreloadedCities from './components/PreloadedCities';
 import SearchCity from './Components/SearchCity';
-// import CityInfoDisplay from './components/CityInfoDisplay';
-// import SearchHistory from './components/SearchHistory';
+import InfoDisplay from './Components/InfoDisplay';
+import SearchHistory from './components/SearchHistory';
 
 
 export default class App extends React.Component {
@@ -10,18 +9,19 @@ export default class App extends React.Component {
     return (
       <div className='container'>
         <div className='jumbotron' >
-          <h1 className='display-3 text-center'>Weather App</h1>
-          <h3>Always know if you need an umbrella!</h3>
+          <h1 className='display-3'>Weather App</h1>
+          <br />
+          <h4>Always know if you need an umbrella!</h4>
         </div>
         <div>
           <SearchCity />
         </div>
-        <div className='row'>
-          <div className='col-12 col-md-6 mb-4'>
-            {/* <CityInfoDisplay /> */}
+        <div className='row' width="100%">
+          <div className='col-6'>
+            <InfoDisplay />
           </div>
-          <div className='col-12 col-md-6 mb-4'>
-            call searchhistory component
+          <div className='col-6'>
+            <SearchHistory />
           </div>
         </div>
       </div>

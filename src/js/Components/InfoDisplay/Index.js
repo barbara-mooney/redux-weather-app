@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SearchCity from './SearchCity';
+import InfoDisplay from './InfoDisplay';
 
 function mapStoreToProps(store) {
     return {
@@ -15,4 +15,4 @@ function mapStoreToProps(store) {
         wind: store.cityReducers.wind
     };
 }
-export default connect(mapStoreToProps)(SearchCity);
+export default connect(mapStoreToProps)(InfoDisplay);
