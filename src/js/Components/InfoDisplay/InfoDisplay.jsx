@@ -1,7 +1,6 @@
 import React from 'react';
 
 const InfoDisplay = (props) => {
-    console.log(props.icon, 'console of props.icon')
     return (
     <div className='card'>
         <div className='card-header text-white bg-primary'>City Information</div>

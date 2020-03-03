@@ -1,5 +1,5 @@
 import React from 'react';
-// import { connect } from "react-redux";
+
 import {
     updateCity,
     searchCity,
@@ -17,20 +17,17 @@ export default class SearchCity extends React.Component {
         const { dispatch } = this.props;
         const { value } = event.target;
         dispatch(updateCity(value));
-        console.log(value, 'value of city handlecityinput')
     }
 
     handleSearchCity() {
         const { name, dispatch } = this.props;
         dispatch(searchCity(name));
-        console.log(name, '1st console inside handlesearchcity');
     }
 
     handleDefaultCity(event) {
         const { dispatch } = this.props;
         const { value } = event.target;
         dispatch(searchCity(value));
-        console.log(name, 'console inside handledefaultcity');
     }
 
     render() {

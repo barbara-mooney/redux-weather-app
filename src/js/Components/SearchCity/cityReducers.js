@@ -1,4 +1,3 @@
-// import moment from 'moment';
 
 const defaultState = {
     name: '',
@@ -16,12 +15,9 @@ const defaultState = {
 
 export default function cityReducers (state = defaultState, action) {
     const { type, payload } = action;
-
-    console.log(payload, 'payload inside reducer function')
     
     switch (type) {
         case 'UPDATE_CITY': {
-            console.log(payload, 'inside update city reducer')
             return {
                 ...state, 
                 name: payload.name, 
@@ -53,7 +49,7 @@ export default function cityReducers (state = defaultState, action) {
             return {
                 ...state,
                 status: 'Rejected',
-                error: payload.data,
+                error: payload.data, 
             }
         } default: {
             return state;
