@@ -7,37 +7,36 @@ const InfoDisplay = (props) => {
         <div className='card-header text-white bg-primary'>City Information</div>
         <div className='card'>
             <div className='card-body'>
-                <img src={`http://openweather.org/img/wn/${props.icon}@2x.png`} id="weather-icon" alt=''/>
-                <h3 className='text-center weatherInfo'> {props.name} </h3>
+                <h3 className='text-center'><img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} id="weather-icon" alt=''/>{props.name}</h3>
                 <h6 className='text-center'>Lat/Long: {props.lat}{props.lon}</h6>
             </div>
             <hr className='horizontalLine'/>
-            <div className='row'>
-                <div className='col text-center weatherInfo'>
+            <div className='row format'>
+                <div className='col text-center  format'>
                     <h6 className='h6 strong'>Temperature(F)</h6>
-                    <p>{ props.temp }</p>
+                    <h4 className='weatherInfo'>{ props.temp }</h4>
                 </div>
-                <div className='col text-center weatherInfo'>
+                <div className='col text-center format'>
                     <h6 className='h6 strong'>Pressure</h6>
-                    <p>{ props.pressure }</p>
+                    <h4 className='weatherInfo'>{ props.pressure }</h4>
                 </div>
-                <div className='col text-center weatherInfo'>
+                <div className='col text-center format'>
                     <h6 className='h6 strong'>Humidity</h6>
-                    <p>{ props.humidity }</p>
+                    <h4 className='weatherInfo'>{ props.humidity }</h4>
                 </div>
             </div>
-            <div className='row'>
-                <div className='col text-center weatherInfo'>
+            <div className='row format'>
+                <div className='col text-center format'>
                     <h6 className='h6 strong'>Lowest Temp (F)</h6>
-                    <p>{ props.temp_min }</p>
+                    <h4 className='weatherInfo'>{ props.temp_min }</h4>
                 </div>
-                <div className='col text-center weatherInfo'>
+                <div className='col text-center format'>
                     <h6 className='h6 strong'>Highst Temp (F)</h6>
-                    <p>{ props.temp_max }</p>
+                    <h4 className='weatherInfo'>{ props.temp_max }</h4>
                 </div>
-                <div className='col text-center'>
+                <div className='col text-center format'>
                     <h6 className='h6 strong'>Wind Speed</h6>
-                    <p>{ props.wind }</p>
+                    <h4 className='weatherInfo'>{ props.wind }</h4>
                 </div>
             </div>
         </div>

@@ -82,7 +82,7 @@ export default class SearchCity extends React.Component {
                     <div className="input-group-append">
                         <span><button 
                                 type='button'
-                                className='btn btn-secondary'
+                                className='btn btn-outline-primary'
                                 onClick={ this.handleSearchCity }>Go!
                             </button></span>
                     </div>

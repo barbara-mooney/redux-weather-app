@@ -45,7 +45,7 @@ export default function cityReducers (state = defaultState, action) {
                 temp_min: payload.data.main.temp_min,
                 temp_max: payload.data.main.temp_max,
                 wind: payload.data.wind.speed,
-                history: [...state.history, state.name]
+                history: [...state.history, payload.data.name]
                 }; 
             }            
 
