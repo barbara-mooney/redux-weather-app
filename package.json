@@ -38,7 +38,7 @@
     "redux-thunk": "^2.3.0",
     "serve-favicon": "^2.0.1",
     "webpack": "^4.8.3",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.6.1",
